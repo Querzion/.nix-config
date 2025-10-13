@@ -1,7 +1,7 @@
 # My NixOS Configuration
 
 <!-- ![NixOS Logo](other/nixos-logo.png) -->
-<img src="other/nixos-logo.png" alt="NixOS Logo" width="120" height="auto"> 
+<img src="other/repo/nixos-logo.png" alt="NixOS Logo" width="120" height="auto"> 
 
 This repository contains my NixOS system and home-manager configuration, managed declaratively using flakes. It supports modular setups for hosts, desktops, packages, and user environments.
 
