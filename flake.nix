@@ -15,7 +15,7 @@
       nixosConfigurations.myhost = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
-          ./hosts/myhost/configuration.nix
+          ./hosts/myhosts/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
