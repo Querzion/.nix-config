@@ -1,4 +1,5 @@
 { pkgs, ... }:
+
 [
   # Video players
   mpv
