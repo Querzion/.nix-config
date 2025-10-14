@@ -21,7 +21,4 @@
 
     # Terminal enhancements
     pkgs.neovim
-
-    # Docker for dev containers
-    pkgs.docker_28
 ]
