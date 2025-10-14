@@ -5,8 +5,6 @@
     pkgs.eza
     pkgs.unzip
     pkgs.btop
-    pkgs.fastfetch
-    pkgs.starship
     #pkgs.flatpak
     pkgs.appimage-run
     pkgs.libsecret
