@@ -2,7 +2,6 @@
 
 [
     # Editors & IDEs
-    pkgs.vscode
     pkgs.jetbrains.rider
     pkgs.jetbrains.rust-rover
     pkgs.jetbrains.webstorm
@@ -14,8 +13,6 @@
     pkgs.rustup
     pkgs.nodejs_24
     pkgs.npm-check
-    pkgs.dotnetCorePackages.sdk_8_0
-    pkgs.dotnetCorePackages.sdk_9_0
 
     # Git & GitHub tooling
     pkgs.github-desktop
@@ -23,7 +20,6 @@
     pkgs.ghz
 
     # Terminal enhancements
-    pkgs.starship
     pkgs.neovim
 
     # Docker for dev containers
