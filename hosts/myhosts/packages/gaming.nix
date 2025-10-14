@@ -5,12 +5,9 @@
   heroic
   lutris
 
-  # Emulators
-  wineWowPackages.stable
-  wine64Packages.stable
+  # other gaming tools
   protonup-qt
   proton-ge-bin
-  winetricks
   dxvk
   vkd3d
   faudio
