@@ -22,4 +22,6 @@
     #clamav
     #rkhunter
     #chkrootkit
+
+    security.rtkit.enable = true;
 ]

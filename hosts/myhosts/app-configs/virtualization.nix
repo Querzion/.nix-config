@@ -26,7 +26,7 @@
 
   # Hardware passthrough (if you have VFIO/IOMMU)
   boot.kernelParams = [ "iommu=pt" ];
-  boot.kernelModules = [ "kvm-intel" "vfio-pci" ];  # Or kvm-amd
+  boot.kernelModules = [ "kvm-amd" "vfio-pci" ];  # Or kvm-intel
 
   # Networking: Bridge for VMs to access LAN
   networking.bridges.vmc-bridge = {

@@ -1,12 +1,15 @@
 { config, pkgs, ... }:
 
 {
-    # Enable KDE Plasma
-    services.xserver.enable = true;
-    services.xserver.displayManager.sddm.enable = true;
-    services.desktopManager.plasma5.enable = true;
+    # Disable X11 globally
+    services.xserver.enable = false;
 
-    # KDE Utilities
+    # Enable Plasma Wayland session
+    services.desktopManager.plasma6.enable = true;
+    services.xserver.desktopManager.plasma6.wayland.enable = true;
+    services.displayManager.sddm.enable = true;
+
+    # KDE utilities
     environment.systemPackages = with pkgs; [
         kdeApplications.kate
         kdeApplications.dolphin
@@ -20,8 +23,8 @@
         Exec=yakuake
         Hidden=false
         NoDisplay=false
-        X-GNOME-Autostart-enabled=true
         Name=Yakuake
         Comment=Start Yakuake terminal emulator
+        OnlyShowIn=KDE;
     '';
 }

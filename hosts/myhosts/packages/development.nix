@@ -18,7 +18,9 @@
     pkgs.github-desktop
     pkgs.gh
     pkgs.ghz
+    pkgs.lazygit
 
-    # Terminal enhancements
-    pkgs.neovim
+    # Build tools
+    pkgs.gnumake
+    pkgs.gcc
 ]

@@ -2,15 +2,18 @@
 
 {
   imports = [
-    ./hardware-configurations.nix
+    ./hardware-configuration.nix
+    ./firmware.nix
+    ./graphics.nix
     ./boot.nix
-    ./desktop.nix
+    ./bluetooth.nix
     ./locale.nix
+    ./desktop.nix
     ./network.nix
-    #./samba-shares.nix
     ./services.nix
     ./users.nix
     ./fonts.nix
+    #./samba-shares.nix
     ./app-packages.nix
     ./app-configs.nix
   ];

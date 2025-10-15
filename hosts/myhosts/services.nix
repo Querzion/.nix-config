@@ -1,15 +1,31 @@
 { config, pkgs, ... }:
 
 {
-    services.pipewire.enable = true;
-    services.pipewire.pulse.enable = true;
-    services.pipewire.alsa.enable = true;
-    services.pipewire.alsa.support32Bit = true;
+    # Disable printing service
+    services.printing.enable = false;
 
-    services.picom.enable = true;
-    services.picom.backend = "glx";
-    services.picom.fade = true;
+    # Remove sound.enable entirely
+    services.pulseaudio.enable = false; # disable legacy PulseAudio
 
-    virtualisation.docker.enable = true;
-    virtualisation.docker.enableOnBoot = true;
+    # Enable PipeWire for audio
+    services.pipewire = {
+        enable = true;
+        pulse.enable = true;       # PipeWire PulseAudio compatibility
+        alsa.enable = true;        # ALSA support
+        alsa.support32Bit = true;  # 32-bit apps
+        jack.enable = true;        # optional
+    };
+
+    # Enable compositor
+    services.picom = {
+        enable = true;
+        backend = "glx";
+        fade = true;
+    };
+
+    # Set keyboard layout to Swedish Dvorak
+    services.xserver.xkb = {
+        layout = "se";
+        variant = "dvorak";
+    };
 }

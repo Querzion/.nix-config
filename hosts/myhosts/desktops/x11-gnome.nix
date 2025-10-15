@@ -1,15 +1,19 @@
 { config, pkgs, ... }:
 
 {
-    # Enable GNOME Desktop
+    # Enable X11
     services.xserver.enable = true;
+
+    # Enable GNOME Desktop
     services.desktopManager.gnome.enable = true;
     services.displayManager.gdm.enable = true;
 
-    # Optional: add GNOME packages
+    # Optional GNOME packages
     environment.systemPackages = with pkgs; [
         gnome.gnome-tweaks
         gnome.gnome-calculator
         gnome.gnome-system-monitor
+        gnome.gnome-terminal
+        nautilus
     ];
 }

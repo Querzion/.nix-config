@@ -9,8 +9,5 @@
         init.defaultBranch = "main";
         pull.rebase = true;
         };
-    };
-
-    programs.ssh.startAgent = true;
-    
+    };    
 }

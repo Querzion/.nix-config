@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+    services.xserver.enable = false;
+
     # Enable Cosmic Desktop
     services.desktopManager.cosmic.enable = true;
     services.displayManager.cosmic-greeter.enable = true;

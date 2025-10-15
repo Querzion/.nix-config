@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-    # Samba Shares (credentials in dotfiles repo)
+    # Samba Shares (credentials in hidden files repoository on GitHub)
     fileSystems."/home/querzion/Shares/Gaming" = {
         device = "//192.168.0.3/archive.gaming";
         fsType = "cifs";
