@@ -1,26 +1,28 @@
 { pkgs, ... }:
 
+with pkgs;
+
 [
     # Editors & IDEs
-    pkgs.jetbrains.rider
-    pkgs.jetbrains.rust-rover
-    pkgs.jetbrains.webstorm
-    pkgs.android-studio
-    pkgs.azuredatastudio
-    pkgs.sql-studio
+    jetbrains.rider
+    jetbrains.rust-rover
+    jetbrains.webstorm
+    android-studio
+    azuredatastudio
+    sql-studio
 
     # CLI tools & version managers
-    pkgs.rustup
-    pkgs.nodejs_24
-    pkgs.npm-check
+    rustup
+    nodejs_24
+    npm-check
 
     # Git & GitHub tooling
-    pkgs.github-desktop
-    pkgs.gh
-    pkgs.ghz
-    pkgs.lazygit
+    github-desktop
+    gh
+    ghz
+    lazygit
 
     # Build tools
-    pkgs.gnumake
-    pkgs.gcc
+    gnumake
+    gcc
 ]

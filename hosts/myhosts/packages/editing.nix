@@ -1,14 +1,16 @@
 { pkgs, ... }:
 
+with pkgs;
+
 [
-    #pkgs.krita
-    pkgs.gimp
-    #pkgs.inkscape
-    #pkgs.kdenlive
-    #pkgs.audacity
-    #pkgs.shotcut
-    #pkgs.darktable
-    #pkgs.rawtherapee
-    #pkgs.blender
-    #pkgs.davinci-resolve  # optional (needs unfree + manual setup)
+    #krita
+    gimp
+    #inkscape
+    #kdenlive
+    #audacity
+    #shotcut
+    #darktable
+    #rawtherapee
+    #blender
+    #davinci-resolve  # optional (needs unfree + manual setup)
 ]

@@ -1,13 +1,14 @@
 { pkgs, ... }:
 
+with pkgs;
+
 [
-  # Pipewire & Audio
-  pipewire
-  pipewire-alsa
-  pipewire-pulse
-  pipewire-jack
-  rtkit            # real-time scheduling for audio
-  alsaUtils        # ALSA utilities
-  alsaLib          # ALSA library
-  pulseaudio       # for compatibility if needed
+  # Audio Players
+  spotify
+
+  # Audio utilities / tools
+  pavucontrol      # PulseAudio/Audio mixer GUI
+  alsa-utils       # ALSA utilities like alsamixer
+  qasmixer         # optional mixer
+  ladspaPlugins    # audio effects / plugins
 ]

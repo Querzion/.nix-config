@@ -1,16 +1,27 @@
 { pkgs, ... }:
 
-[
-  # Video players
-  mpv
-  vlc
-  jellyfin-media-player
+with pkgs;
 
-  # Optional: codecs and GStreamer plugins
-  gst_all_1.gstreamer
-  gst_all_1.gst-plugins-base
-  gst_all_1.gst-plugins-good
-  gst_all_1.gst-plugins-bad
-  gst_all_1.gst-plugins-ugly
-  gst_all_1.gst-libav
+[
+  # --------------------------
+  # Video players
+  # --------------------------
+  mpv                     # lightweight, highly configurable media player
+  vlc                     # versatile media player with GUI
+  jellyfin-media-player   # client for Jellyfin media server
+
+  # --------------------------
+  # GStreamer framework & plugins
+  # --------------------------
+  gst_all_1.gstreamer           # core GStreamer library
+  gst_all_1.gst-plugins-base    # essential base plugins
+  gst_all_1.gst-plugins-good    # good quality plugins
+  gst_all_1.gst-plugins-bad     # less stable or experimental plugins
+  gst_all_1.gst-plugins-ugly    # plugins with licensing restrictions
+  gst_all_1.gst-libav           # FFmpeg-based plugin for extra codecs
+
+  # --------------------------
+  # Media processing / conversion
+  # --------------------------
+  ffmpeg                   # command-line tool for converting, streaming, and processing audio/video
 ]

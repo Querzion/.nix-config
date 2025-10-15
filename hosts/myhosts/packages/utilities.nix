@@ -1,15 +1,17 @@
 { pkgs, ... }:
 
+with pkgs;
+
 [
-    pkgs.curl
-    pkgs.wget
-    pkgs.eza
-    pkgs.unzip
-    #pkgs.btop
-    #pkgs.flatpak
-    pkgs.appimage-run
-    pkgs.libsecret
-    pkgs.lmstudio
-    pkgs.localsend
-    pkgs.tree
+    curl
+    wget
+    eza
+    unzip
+    #btop
+    #flatpak
+    appimage-run
+    libsecret
+    lmstudio
+    localsend
+    tree
 ]

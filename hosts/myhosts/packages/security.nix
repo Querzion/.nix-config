@@ -1,5 +1,7 @@
 { pkgs, ... }:
 
+with pkgs;
+
 [
     # Security Tools
     yubikey-manager-qt

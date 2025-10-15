@@ -1,5 +1,7 @@
 { pkgs, ... }:
 
+with pkgs;
+
 [
   # Game launchers
   heroic
