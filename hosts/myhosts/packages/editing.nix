@@ -5,6 +5,8 @@ with pkgs;
 [
     #krita
     gimp
+    libreoffice
+    figma-linux
     #inkscape
     #kdenlive
     #audacity
@@ -13,4 +15,5 @@ with pkgs;
     #rawtherapee
     #blender
     #davinci-resolve  # optional (needs unfree + manual setup)
+    # cad # Look for a CAD package
 ]

@@ -3,15 +3,16 @@
 with pkgs;
 
 [
+    lmstudio
+    localsend
+    appimage-run
+    #flatpak
     curl
     wget
     eza
     unzip
-    #btop
-    #flatpak
-    appimage-run
     libsecret
-    lmstudio
-    localsend
     tree
+    #btop
+    freerdp
 ]

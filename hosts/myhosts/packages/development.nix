@@ -7,6 +7,7 @@ with pkgs;
     jetbrains.rider
     jetbrains.rust-rover
     jetbrains.webstorm
+    android-tools
     android-studio
     azuredatastudio
     sql-studio
@@ -25,4 +26,7 @@ with pkgs;
     # Build tools
     gnumake
     gcc
+
+    postman
+    insomnia
 ]

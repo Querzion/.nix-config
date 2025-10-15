@@ -4,9 +4,12 @@ with pkgs;
 
 [
   # Graphics drivers
+  rocmPackages.clr
   amdvlk
-  mesa
   vulkan-tools
+  vulkan-loader
+  vulkan-validation-layers
+  mesa
   glxinfo
   pciutils
 
@@ -14,9 +17,6 @@ with pkgs;
   libinput          # general input devices
 
   # Bluetooth
-  bluez
+  #bluez
   bluez-tools
-
-  # Firmware: linux-firmware ensures devices like Wi-Fi and GPUs have the latest firmware.
-  linux-firmware
 ]

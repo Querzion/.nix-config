@@ -13,4 +13,5 @@ with pkgs;
   dxvk
   vkd3d
   faudio
+  cabextract
 ]
