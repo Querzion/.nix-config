@@ -6,7 +6,7 @@
     ./git.nix
   ];
 
-  programs.ssh.startAgent = true;
+  programs.ssh.startAgent = false;
   programs.starship.enable = true;
   programs.fastfetch.enable = true;
 
