@@ -3,6 +3,7 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./modules/keyboard.nix
     ./firmware.nix
     ./graphics.nix
     ./boot.nix

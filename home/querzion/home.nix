@@ -4,6 +4,8 @@
   imports = [
     ./bashrc.nix
     ./git.nix
+    #./desktop-settings/plasma.breeze-settings.nix
+    #./desktop-settings/plasma.capucchin-settings.nix
   ];
 
   programs.starship.enable = true;
@@ -13,13 +15,6 @@
     pkgs.btop
     pkgs.eza
   ];
-
-  services.xserver.xkb = {
-    layout = "se";
-    variant = "dvorak";
-  };
-
-  console.keyMap = "sv-latin1";
 
   home.stateVersion = "25.05";
 }
