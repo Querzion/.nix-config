@@ -17,4 +17,12 @@
     ./app-packages.nix
     ./app-configs.nix
   ];
+
+  # Allow installation of unfree packages globally
+  nixpkgs.config.allowUnfree = true;
+  
+  ####################
+  # System Version   #
+  ####################
+  system.stateVersion = "25.05";
 }
