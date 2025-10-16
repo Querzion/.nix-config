@@ -15,5 +15,9 @@ with pkgs;
     #rawtherapee
     #blender
     #davinci-resolve  # optional (needs unfree + manual setup)
-    # cad # Look for a CAD package
+
+    # CAD package
+    #freecad-wayland
+    #freecad
+    #freecad-qt6
 ]
