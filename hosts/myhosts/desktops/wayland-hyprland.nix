@@ -14,6 +14,7 @@
         slurp
         wl-clipboard
         wofi   # application launcher
+        waypapers
     ];
 
     # Optional: greeter for graphical login (like greetd)
