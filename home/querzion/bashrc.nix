@@ -35,6 +35,8 @@
         alias gco='git checkout'
         alias gbr='git branch'
         alias gdf='git diff'
+        alias gen-gh-key='ssh-keygen -t rsa -b 4096 -C "slisk.lindqvist@querzion.com" -f ~/.ssh/id_rsa_github'
+
 
         # --------------------------
         # Docker shortcuts

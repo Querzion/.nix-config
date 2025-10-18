@@ -2,9 +2,9 @@
 
 {
   imports = [
+    ./firmware.nix
     ./hardware-configuration.nix
     ./modules/keyboard.nix
-    ./firmware.nix
     ./graphics.nix
     ./boot.nix
     ./bluetooth.nix

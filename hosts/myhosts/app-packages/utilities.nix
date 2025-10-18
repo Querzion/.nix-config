@@ -15,5 +15,7 @@
      #btop
      freerdp
      gparted
+     udisks2
+     polkit
   ];
 }

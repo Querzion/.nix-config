@@ -1,7 +1,16 @@
 { config, pkgs, ... }:
 
 {
-    programs.ssh.startAgent = false;
+    programs.ssh = {
+        startAgent = true;
+    
+        extraConfig = ''
+            Host github.com
+                User git
+                IdentityFile ~/.ssh/id_rsa
+                IdentitiesOnly yes
+        '';
+    };
 
     services.openssh = {
         enable = false;

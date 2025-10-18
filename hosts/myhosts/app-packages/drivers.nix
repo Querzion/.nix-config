@@ -2,21 +2,14 @@
 
 {
   environment.systemPackages = with pkgs; [
-     # Graphics drivers
-     rocmPackages.clr
-     amdvlk
-     vulkan-tools
-     vulkan-loader
-     vulkan-validation-layers
-     mesa
-     glxinfo
-     pciutils
+    # Diagnostic tools
+    glxinfo
+    pciutils
 
-     # Input / Peripherals
-     libinput          # general input devices
+    # Input
+    libinput
 
-     # Bluetooth
-     #bluez
-     bluez-tools
+    # Bluetooth tools (if not handled elsewhere)
+    bluez-tools
   ];
 }
