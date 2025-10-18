@@ -14,6 +14,9 @@
       pull = {
         rebase = "false";  # string
       };
+      credential = {
+        helper = "store";
+      };
     };
   };
 }
