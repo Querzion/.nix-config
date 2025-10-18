@@ -13,7 +13,7 @@
         # Environment variables
         # --------------------------
         export NIXOS_DOTFILES="$HOME/.nix-config"
-        export NIXOS_HOST="myhosts"
+        export NIXOS_HOST="myhost"
 
         # --------------------------
         # NixOS Flake management
