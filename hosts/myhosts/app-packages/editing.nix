@@ -1,8 +1,7 @@
 { pkgs, ... }:
 
-with pkgs;
-
-[
+{
+  environment.systemPackages = with pkgs; [
     #krita
     gimp
     libreoffice
@@ -20,4 +19,5 @@ with pkgs;
     #freecad-wayland
     #freecad
     #freecad-qt6
-]
+  ];
+}

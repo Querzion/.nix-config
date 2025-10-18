@@ -1,12 +1,22 @@
 { pkgs, ... }:
 
-with pkgs;
-
-[
+{
+  environment.systemPackages = with pkgs; [
+    git
+  
     # Editors & IDEs
     jetbrains.rider
     jetbrains.rust-rover
     jetbrains.webstorm
+    
+    vscode # Using the vscode package directly
+    # You can add specific extensions by overriding `vscode` here:
+    #vscode.override {
+    #  extensions = with pkgs.vscode-extensions; [
+    #    ms-dotnettools.csharp
+    #  ];
+    #}
+    
     android-tools
     android-studio
     azuredatastudio
@@ -29,4 +39,5 @@ with pkgs;
 
     postman
     insomnia
-]
+  ];
+}

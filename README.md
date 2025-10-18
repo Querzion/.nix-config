@@ -9,13 +9,12 @@ This repository contains my NixOS system and home-manager configuration, managed
 1. **Clone the repository** to your home folder:
 
 ```bash
-git clone https://github.com/querzion/.nix-config ~/.nix-config
-cd ~/.nix-config
+git clone https://github.com/querzion/.nix-config && cd ~/.nix-config
 ```
 2. Use this flake to rebuild your system and home-manager 
 (forces Nix to use these files instead of /etc/nixos/configuration.nix):
 ```bash
-sudo nixos-rebuild switch --flake .#myhost
+sudo nixos-rebuild switch --flake ~/.nix-config#myhost
 home-manager switch --flake .#querzion
 ```
 That's it — your system will now use the configurations from this repository.

@@ -5,8 +5,8 @@
     # Wine Packages    #
     ####################
     environment.systemPackages = with pkgs; [
+        #wineWowPackages.stable  # 32-bit support
         wine64Packages.stable
-        wineWowPackages.stable  # 32-bit support
         winetricks               # handy helper scripts
 
         # Wine audio support

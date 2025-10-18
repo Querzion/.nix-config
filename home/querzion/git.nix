@@ -1,13 +1,20 @@
 { config, pkgs, ... }:
 
 {
-    programs.git = {
-        enable = true;
-        config = {
-        user.name = "Slisk Lindqvist";
-        user.email = "slisk.lindqvist@querzion.com";
-        init.defaultBranch = "main";
-        pull.rebase = true;
-        };
-    };    
+  programs.git = {
+    enable = true;
+    extraConfig = {
+      init = {
+        defaultBranch = "main";
+      };
+      user = {
+        name = "Slisk Lindqvist";
+        email = "slisk.lindqvist@querzion.com";
+      };
+      pull = {
+        rebase = "false";  # string
+      };
+    };
+  };
 }
+

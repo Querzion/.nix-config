@@ -1,8 +1,7 @@
 { pkgs, ... }:
 
-with pkgs;
-
-[
+{
+  environment.systemPackages = with pkgs; [
     discord
     teams-for-linux
     brave
@@ -10,4 +9,6 @@ with pkgs;
     mailspring
     thunderbird
     google-chrome
-]
+  ];
+}
+

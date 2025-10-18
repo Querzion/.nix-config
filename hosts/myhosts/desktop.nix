@@ -2,14 +2,13 @@
 
 {
     imports = [
-        ./desktop/wayland-plasma.nix
-        
-        #./desktop/wayland-cosmic.nix
-        #./desktop/wayland-hyprland.nix
-        #./desktop/wayland-gnome.nix
-        #./desktop/x11-gnome.nix
-        #./desktop/x11-plasma.nix
-        #./desktop/x11-xfce.nix
-        #./desktop/x11-dwm.nix
+        #./desktops/wayland-plasma.nix
+        ./desktops/wayland-cosmic.nix
+        #./desktops/wayland-hyprland.nix
+        #./desktops/wayland-gnome.nix
+        #./desktops/x11-gnome.nix
+        #./desktops/x11-plasma.nix
+        #./desktops/x11-xfce.nix
+        #./desktops/x11-dwm.nix
     ];
 }

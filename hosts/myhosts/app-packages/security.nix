@@ -1,11 +1,10 @@
 { pkgs, ... }:
 
-with pkgs;
-
-[
+{
+  environment.systemPackages = with pkgs; [
     # Security Tools
-    yubikey-manager-qt
-    
+    #yubikey-manager-qt
+
     # Password Managers
     keepassxc
 
@@ -24,6 +23,9 @@ with pkgs;
     #clamav
     #rkhunter
     #chkrootkit
+  ];
 
-    security.rtkit.enable = true;
-]
+  # Enable RTKit (Real-time permissions manager)
+  security.rtkit.enable = true;
+}
+

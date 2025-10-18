@@ -11,15 +11,18 @@
     services.geoclue2.enable = true;
 
     environment.systemPackages = with pkgs; [
-        chronos
-        cosmic-applets
-        cosmic-edit
-        cosmic-ext-calculator
-        cosmic-ext-forecast    
-        cosmic-ext-tasks
-        cosmic-ext-tweaks
-        cosmic-reader
-        cosmic-screenshot
-        quick-webapps
+        #chronos # GNOME extension?
+        #cosmic-applets
+        #cosmic-edit
+        #cosmic-ext-calculator
+        #cosmic-ext-forecast    
+        #cosmic-ext-tasks
+        #cosmic-ext-tweaks
+        #cosmic-reader
+        #cosmic-screenshot
+        #quick-webapps
+        #cosmic-bg
+        #cosmic-osd
+        #cosmic-term
     ];
 }

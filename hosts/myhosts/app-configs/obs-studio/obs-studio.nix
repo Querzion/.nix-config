@@ -23,7 +23,7 @@
         # obs-vertical-canvas # Compile errors
         (obs-vertical-canvas.overrideAttrs (prevAttrs: {
             patches = (prevAttrs.patches or []) ++ [
-            /home/querzion/.nix-config/hosts/myhosts/app-configs/obs-studio/patches/obs-vertical-canvas.diff
+              ./patches/obs-vertical-canvas.diff
             ];
         }))
         ];
