@@ -12,7 +12,7 @@
         # --------------------------
         # Environment variables
         # --------------------------
-        export NIXOS_DOTFILES="$HOME/.nix-config"
+        export NIXOS_DOTFILES="~/.nix-config"
         export NIXOS_HOST="myhost"
 
         # --------------------------
