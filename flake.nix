@@ -18,6 +18,11 @@
           ./hosts/myhosts/configuration.nix
           home-manager.nixosModules.home-manager
           {
+            # make home-manager CLI available system-wide
+            environment.systemPackages = with pkgs; [
+                home-manager
+            ];
+          
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.querzion = import ./home/querzion/home.nix;
