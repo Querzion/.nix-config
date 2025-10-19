@@ -18,11 +18,11 @@
         # --------------------------
         # NixOS Flake management
         # --------------------------
-        alias nos-new='sudo nixos-rebuild switch --flake ~/.nix-config#myhost'
-        alias nos-update='nix flake update --flake ~/.nix-config'
-        alias nos-update-build='nix flake update --flake ~/.nix-config && nos-new'
-        alias nos-upgrade='sudo nixos-rebuild switch --upgrade --flake ~/.nix-config#myhost'
-        alias nos-check='nixos-rebuild build --flake ~/.nix-config#myhost'
+        alias nos-new='sudo nixos-rebuild switch --flake .nix-config#myhost'
+        alias nos-update='nix flake update --flake .nix-config'
+        alias nos-update-build='nix flake update --flake .nix-config && nos-new'
+        alias nos-upgrade='sudo nixos-rebuild switch --upgrade --flake .nix-config#myhost'
+        alias nos-check='nixos-rebuild build --flake .nix-config#myhost'
 
         # --------------------------
         # Git shortcuts
