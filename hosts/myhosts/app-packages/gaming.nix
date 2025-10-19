@@ -9,9 +9,6 @@
      # other gaming tools
      protonup-qt
      #proton-ge-bin
-     dxvk
-     vkd3d
-     faudio
      cabextract
   ];
 }

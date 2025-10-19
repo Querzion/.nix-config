@@ -10,12 +10,14 @@
     enable32Bit = true;
 
     extraPackages = with pkgs; [
-      mesa
-      vulkan-loader
-      vulkan-tools
-      vulkan-validation-layers
-      #amdvlk
-      #rocmPackages.clr
+        mesa
+        vulkan-loader
+        vulkan-tools
+        vulkan-validation-layers
+        #amdvlk
+        #rocmPackages.clr
+        dxvk
+        vkd3d
     ];
   };
 }
