@@ -11,7 +11,6 @@
 
         # Wine audio support
         faudio
-        vkd3d            # Vulkan Direct3D bridge (needed for some games/audio in Wine)
     ];
 
     ####################
