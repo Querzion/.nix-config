@@ -2,21 +2,12 @@
 
 {
   environment.systemPackages = with pkgs; [
-    git
-  
+ 
     # Editors & IDEs
     jetbrains.rider
     jetbrains.rust-rover
     jetbrains.webstorm
-    
-    vscode # Using the vscode package directly
-    # You can add specific extensions by overriding `vscode` here:
-    #vscode.override {
-    #  extensions = with pkgs.vscode-extensions; [
-    #    ms-dotnettools.csharp
-    #  ];
-    #}
-    
+    vscode
     android-tools
     android-studio
     azuredatastudio
@@ -24,10 +15,15 @@
 
     # CLI tools & version managers
     rustup
-    nodejs_24
+    nodejs
+    #nodejs_24
     npm-check
+    #python314
+    python3
+    python3Packages.pip
 
     # Git & GitHub tooling
+    git
     github-desktop
     gh
     ghz

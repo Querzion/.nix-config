@@ -76,6 +76,11 @@
             '
 
         # --------------------------
+        # Mailspring (Email-client specific for any session not KDE/GNOME!)
+        # --------------------------
+        alias mailspring='mailspring --password-store="gnome-libsecret"'
+
+        # --------------------------
         # Starship prompt
         # --------------------------
         eval "$(starship init bash)"
