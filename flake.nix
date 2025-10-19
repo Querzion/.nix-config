@@ -19,8 +19,8 @@
           home-manager.nixosModules.home-manager
           {
             # make home-manager CLI available system-wide
-            environment.systemPackages = with pkgs; [
-                home-manager
+            environment.systemPackages = [
+                pkgs.home-manager
             ];
           
             home-manager.useGlobalPkgs = true;
