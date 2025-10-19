@@ -16,6 +16,7 @@
 
         package = pkgs.steam.override {
             extraEnv = {
+                # Change MangoHud to either 1 / off / default / fancy / legacy
                 MANGOHUD = "1";         # enable Mangohud by default
                 OBS_VKCAPTURE = "1";    # enable OBS Vulkan capture
                 RADV_TEX_ANISO = "16";  # max anisotropic filtering
