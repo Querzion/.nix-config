@@ -9,7 +9,7 @@
         ./app-configs/docker.nix
         ./app-configs/docker-sql-server.nix
         ./app-configs/dotnet.nix
-        ./app-configs/virtualization.nix
+        #./app-configs/virtualization.nix
         ./app-configs/wine.nix
     ];
 }
