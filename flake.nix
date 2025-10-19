@@ -17,17 +17,18 @@
         modules = [
           ./hosts/myhosts/configuration.nix
           home-manager.nixosModules.home-manager
-          {
-            # make home-manager CLI available system-wide
+          # <-- module function with pkgs in scope
+          ({ config, pkgs, ... }: {
             environment.systemPackages = [
-                pkgs.home-manager
+              pkgs.home-manager
             ];
-          
+
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.querzion = import ./home/querzion/home.nix;
-          }
+          })
         ];
       };
     };
 }
+
