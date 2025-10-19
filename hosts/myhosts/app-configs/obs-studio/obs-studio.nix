@@ -13,12 +13,12 @@
         obs-tuna
         obs-vkcapture
         input-overlay
-        obs-backgroundremoval
+        #obs-backgroundremoval
         waveform
-        obs-vintage-filter
-        obs-shaderfilter
+        #obs-vintage-filter
+        #obs-shaderfilter
         obs-vaapi
-        looking-glass-obs
+        #looking-glass-obs
         droidcam-obs
         # obs-vertical-canvas # Compile errors
         (obs-vertical-canvas.overrideAttrs (prevAttrs: {

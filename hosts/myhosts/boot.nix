@@ -23,6 +23,6 @@
         };
         
         # Load hid_apple kernel module needed for Apple Magic Trackpad support
-        kernelModules = [ "hid_apple" ];
+        #kernelModules = [ "hid_apple" ];
     };
 }

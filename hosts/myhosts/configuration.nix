@@ -4,6 +4,7 @@
   imports = [
     ./firmware.nix
     ./hardware-configuration.nix
+    ./modules/fix-disk-games-permissions.nix
     ./modules/keyboard.nix
     ./graphics.nix
     ./boot.nix
