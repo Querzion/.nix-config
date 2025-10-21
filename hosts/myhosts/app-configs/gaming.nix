@@ -7,15 +7,15 @@
   environment.systemPackages = with pkgs; [
     # Launchers
     heroic
-    #lutris
+    # lutris (optional)
 
-    # Steam Helpers
+    # Steam / Proton helpers
     protonup-qt
-    cabextract # Winetricks / Protontricks dependency.
     protontricks
+    cabextract  # dependency for Winetricks/Protontricks
 
-    # Wine & tools
-    wineWowPackages.full   # 32-bit + 64-bit support in one
+    # Wine & helpers
+    wineWowPackages.full
     winetricks
     faudio
 
@@ -29,11 +29,18 @@
   # Environment Vars #
   ####################
   environment.sessionVariables = {
+    # Default 64-bit Wine prefix for modern games
     WINEPREFIX = "$HOME/.wine";
     WINEARCH = "win64";
+
+    # Vulkan / gaming tweaks
     MANGOHUD = "1";
     OBS_VKCAPTURE = "1";
     RADV_TEX_ANISO = "16";
+
+    # Explicit Wine paths for Winetricks / Protontricks (avoids unknown arch)
+    WINE = "/run/current-system/sw/bin/wine";
+    WINESERVER = "/run/current-system/sw/bin/wineserver";
   };
 
   ####################
@@ -66,8 +73,8 @@
     ];
 
     extraCompatPackages = with pkgs; [
-      steamtinkerlaunch # Proton config tool
-      #proton-ge-bin
+      steamtinkerlaunch # Proton configuration tool
+      # proton-ge-bin (optional)
     ];
   };
 
