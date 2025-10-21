@@ -5,11 +5,12 @@
         ./app-configs/obs-studio/obs-studio.nix
         ./app-configs/neovim.nix
         ./app-configs/ssh.nix
-        ./app-configs/steam.nix
+        #./app-configs/steam.nix
         ./app-configs/docker.nix
         ./app-configs/docker-sql-server.nix
         ./app-configs/dotnet.nix
+        ./app-configs/gaming-heroic-lutris-steam-wine.nix
         #./app-configs/virtualization.nix
-        ./app-configs/wine.nix
+        #./app-configs/wine.nix
     ];
 }

@@ -19,7 +19,7 @@
         # NixOS Flake management
         # --------------------------
         alias nos-new='cd ~/.nix-config && sudo nixos-rebuild switch --flake .#myhost'
-        alias nos-update='cd ~/.nix-config && nix flake update --flake'
+        alias nos-update='cd ~/.nix-config && nix flake update --flake .'
         alias nos-upgrade='cd ~/.nix-config && sudo nixos-rebuild switch --upgrade --flake .#myhost'
         alias nos-check='cd ~/.nix-config && nixos-rebuild build --flake .#myhost'
 
