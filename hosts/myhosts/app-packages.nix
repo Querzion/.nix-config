@@ -7,10 +7,9 @@
     ./app-packages/development.nix
     ./app-packages/drivers.nix
     ./app-packages/editing.nix
-    #./app-packages/gaming.nix # Go to app-configs | gaming-heroic-lutris-steam-wine.nix
-    ./app-packages/security.nix
     ./app-packages/utilities.nix
     ./app-packages/video.nix
+    ./app-packages/security.nix
   ];
 }
 
