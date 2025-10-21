@@ -8,6 +8,9 @@
     # Launchers
     heroic
     # lutris (optional)
+    
+    # Emulators
+    retroarch
 
     # Steam / Proton helpers
     protonup-qt
