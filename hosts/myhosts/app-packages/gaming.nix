@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
      # Game launchers
-     #heroic
+     heroic
      #lutris
 
      # other gaming tools
