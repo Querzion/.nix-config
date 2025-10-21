@@ -11,7 +11,8 @@
 
     # Steam Helpers
     protonup-qt
-    cabextract
+    cabextract # Winetricks / Protontricks dependency.
+    protontricks
 
     # Wine & tools
     wineWowPackages.full   # 32-bit + 64-bit support in one

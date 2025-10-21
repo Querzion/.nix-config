@@ -85,6 +85,13 @@
         alias own-flake='sudo chown querzion:users /home/querzion/.nix-config/flake.lock'
 
         # --------------------------
+        # WinePrefix 32-bit / 64-bit
+        # --------------------------
+        alias winetricks32="WINEARCH=win32 WINEPREFIX=$HOME/.local/share/wineprefixes/default32 WINE=/run/current-system/sw/bin/wine WINESERVER=/run/current-system/sw/bin/wineserver winetricks"
+        alias winetricks64="WINEARCH=win64 WINEPREFIX=$HOME/.local/share/wineprefixes/default64 WINE=/run/current-system/sw/bin/wine WINESERVER=/run/current-system/sw/bin/wineserver winetricks"
+
+
+        # --------------------------
         # Starship prompt
         # --------------------------
         eval "$(starship init bash)"
