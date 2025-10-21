@@ -34,7 +34,7 @@
         ];
 
         extraCompatPackages = with pkgs; [
-            proton-ge-bin
+            #proton-ge-bin
             steamtinkerlaunch # Manage Proton versions/configs
         ];
     };

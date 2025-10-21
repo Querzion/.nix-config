@@ -3,8 +3,8 @@
 {
   environment.systemPackages = with pkgs; [
      # Game launchers
-     heroic
-     lutris
+     #heroic
+     #lutris
 
      # other gaming tools
      protonup-qt
