@@ -36,7 +36,8 @@
         alias gbr='git branch'
         alias gdf='git diff'
         alias gen-gh-key='ssh-keygen -t rsa -b 4096 -C "slisk.lindqvist@querzion.com" -f ~/.ssh/id_rsa_github'
-        alias lazy-qc='cd ~/.nix-config && git add . && git commit -m "Quick Commit!" && git push'
+        alias lazy-qc='cd ~/.nix-config && git add . && git commit -F <(git status -s) && git push'
+
 
         # --------------------------
         # Docker shortcuts
