@@ -39,7 +39,7 @@
   # Install keyring libraries and gnome-keyring binary
   environment.systemPackages = with pkgs; [
     libsecret
-    gnome-keyring
+    #gnome-keyring
   ];
 
   # Add a systemd user service for gnome-keyring
