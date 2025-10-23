@@ -43,18 +43,18 @@
   ];
 
   # Add a systemd user service for gnome-keyring
-  systemd.user.services.gnome-keyring = {
-    description = "GNOME Keyring Daemon";
-    enable = true; # ✅ ensures 'systemctl --user enable' automatically
-    serviceConfig = {
-        ExecStart = "${pkgs.gnome-keyring}/bin/gnome-keyring-daemon --foreground --components=secrets,ssh,gpg";
-        Environment = [
-        "SSH_AUTH_SOCK=%t/keyring/ssh"
-        "GPG_AGENT_INFO=%t/keyring/gpg"
-        ];
-        Restart = "on-failure";
-    };
-    wantedBy = [ "default.target" ];
-    };
+  #systemd.user.services.gnome-keyring = {
+  #  description = "GNOME Keyring Daemon";
+  #  enable = true; # ✅ ensures 'systemctl --user enable' automatically
+  #  serviceConfig = {
+  #      ExecStart = "${pkgs.gnome-keyring}/bin/gnome-keyring-daemon --foreground --components=secrets,ssh,gpg";
+  #      Environment = [
+  #      "SSH_AUTH_SOCK=%t/keyring/ssh"
+  #      "GPG_AGENT_INFO=%t/keyring/gpg"
+  #      ];
+  #      Restart = "on-failure";
+  #  };
+  #  wantedBy = [ "default.target" ];
+  #  };
 }
 
