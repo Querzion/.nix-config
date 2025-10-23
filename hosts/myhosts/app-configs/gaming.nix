@@ -24,7 +24,7 @@
 
     # Performance tools
     gamemode
-    mangohud
+    #mangohud
     gamescope
   ];
 
