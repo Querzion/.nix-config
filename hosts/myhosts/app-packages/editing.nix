@@ -13,7 +13,7 @@
     #darktable
     #rawtherapee
     #blender
-    #davinci-resolve  # optional (needs unfree + manual setup)
+    davinci-resolve  # optional (needs unfree + manual setup)
 
     # CAD package
     #freecad-wayland
