@@ -76,6 +76,14 @@
             '
 
         # --------------------------
+        # Davinci Resolve - StartUp Commands with OpenCL
+        # --------------------------
+        alias davre-ricl='OCL_ICD_VENDORS=rusticl.icd davinci-resolve'
+        alias davre-rocm='OCL_ICD_VENDORS=amdocl64.icd davinci-resolve'
+        alias ch-ricl-ocl='OCL_ICD_VENDORS=rusticl.icd clinfo -l'
+        alias ch-ricl='clinfo -l'
+
+        # --------------------------
         # Mailspring (Email-client specific for any session not KDE/GNOME!)
         # --------------------------
         alias mailspring='mailspring --password-store="gnome-libsecret"'
