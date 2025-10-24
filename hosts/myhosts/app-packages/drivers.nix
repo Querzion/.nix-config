@@ -14,6 +14,7 @@
     
     # Diagnostic tools
     glxinfo
+    clinfo
     pciutils
 
     # Input
