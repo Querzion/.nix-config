@@ -17,5 +17,7 @@
      gparted
      udisks2
      polkit
+     nnn
+     yazi
   ];
 }
