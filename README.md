@@ -13,10 +13,16 @@ git clone https://github.com/querzion/.nix-config && cd ~/.nix-config
 ```
 2. Use this flake to rebuild your system and home-manager 
 (forces Nix to use these files instead of /etc/nixos/configuration.nix):
+- first time!
 ```bash
 sudo nixos-rebuild switch --flake ~/.nix-config#myhost
-home-manager switch --flake .#querzion
 ```
+- second time, and onwards
+```bash
+nos-new / nos-update / nos-upgrade / nos-check
+```
+<img src="other/repo/nixos-flake-commands.png" alt="NixOS Commands" width="120">
+
 That's it — your system will now use the configurations from this repository.
 
 Built with ❤️ using NixOS 25.05
