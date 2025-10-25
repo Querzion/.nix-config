@@ -31,4 +31,3 @@
         libsecret   # password/key storage
     ];
 }
-
