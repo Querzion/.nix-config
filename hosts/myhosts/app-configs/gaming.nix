@@ -16,6 +16,10 @@
     protonup-qt
     protontricks
     cabextract  # dependency for Winetricks/Protontricks
+    
+    # Graphics | Vulkan/Direct3D translation for Proton / Wine / games
+    dxvk
+    vkd3d
 
     # Wine & helpers
     wineWowPackages.full

@@ -10,14 +10,12 @@
         enable32Bit = true;
     
         extraPackages = with pkgs; [
-            #mesa
-            #vulkan-loader
-            #vulkan-tools
-            #vulkan-validation-layers
+            mesa
+            vulkan-loader
+            vulkan-tools
+            vulkan-validation-layers
             #amdvlk
-            #dxvk
-            #vkd3d
-            
+           
             # AMD OPENCL for DAVINCI RESOLVE
             rocmPackages.clr.icd
             rocmPackages.clr

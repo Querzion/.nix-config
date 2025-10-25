@@ -2,16 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    # Graphics
-    mesa
-    vulkan-loader
-    vulkan-tools
-    vulkan-validation-layers
-    #amdvlk
-    #rocmPackages.clr
-    dxvk
-    vkd3d
-    
     # Diagnostic tools
     glxinfo
     clinfo

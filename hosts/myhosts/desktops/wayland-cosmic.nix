@@ -38,7 +38,10 @@
 
   # Install keyring libraries and gnome-keyring binary
   environment.systemPackages = with pkgs; [
-    libsecret
+    ####################
+    # Security / Key Management
+    ####################
+    libsecret   # password/key storage
     #gnome-keyring
   ];
 
