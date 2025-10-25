@@ -1,23 +1,24 @@
 { config, pkgs, ... }:
 
 {
-    services.xserver.enable = true;
-    services.xserver.xwayland.enable = true;
+    # Disable X11 Server
+    services.xserver.enable = false;
     
     # Enable COSMIC Desktop
     services.desktopManager.cosmic.enable = true;
     services.displayManager.cosmic-greeter.enable = true;
     
-    # Set session variables for the display manager
-    services.xserver.displayManager.sessionVariables = {
+    # Session variables
+    environment.sessionVariables = {
+        COSMIC_DATA_CONTROL_ENABLED = 1;
         XDG_SESSION_TYPE = "wayland";
     };
-      
-    # Possibly also enable the secret service / keyring integration (CRASHES INIT ATM!)
-    #security.pam.services.cosmic-greeter.enableGnomeKeyring = true;
-    
+
     # Session variables for COSMIC
-    environment.sessionVariables.COSMIC_DATA_CONTROL_ENABLED = 1;
+    #environment.sessionVariables.COSMIC_DATA_CONTROL_ENABLED = 1;
+
+    # Possibly also enable the secret service / keyring integration (CRASHES INIT ATM!)
+    #security.pam.services.cosmic-greeter.enableGnomeKeyring = true;    
     
     # Enable geolocation service
     services.geoclue2.enable = true;
