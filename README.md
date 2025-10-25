@@ -19,9 +19,10 @@ sudo nixos-rebuild switch --flake ~/.nix-config#myhost
 ```
 - second time, and onwards
 ```bash
-nos-new / nos-update / nos-upgrade / nos-check
+nos-new
 ```
-<img src="other/repo/nixos-flake-commands.png" alt="NixOS Commands" width="120">
+Here's the flake commands that are in the bashrc.nix file (home/querzion/bashrc.nix)
+<img src="other/repo/nixos-flake-commands.png" alt="NixOS Commands">
 
 That's it — your system will now use the configurations from this repository.
 
