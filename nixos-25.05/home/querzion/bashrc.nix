@@ -16,12 +16,20 @@
         export NIXOS_HOST="myhost"
 
         # --------------------------
-        # NixOS Flake management
+        # NixOS Flake management - STABLE
         # --------------------------
-        alias nos-new='cd ~/.nix-config && sudo nixos-rebuild switch --flake nixos-25.05#myhost'
-        alias nos-update='cd ~/.nix-config && nix flake update --flake nixos-25.05'
-        alias nos-upgrade='cd ~/.nix-config && sudo nixos-rebuild switch --upgrade --flake nixos-25.05#myhost'
-        alias nos-check='cd ~/.nix-config && nixos-rebuild build --flake nixos-25.05#myhost'
+        alias noss-new='cd ~/.nix-config/nixos-25.05 && sudo nixos-rebuild switch --flake .#myhost'
+        alias noss-update='cd ~/.nix-config/nixos-25.05 && nix flake update --flake .'
+        alias noss-upgrade='cd ~/.nix-config/nixos-25.05 && sudo nixos-rebuild switch --upgrade --flake .#myhost'
+        alias noss-check='cd ~/.nix-config/nixos-25.05 && nixos-rebuild build --flake .#myhost'
+
+        # --------------------------
+        # NixOS Flake management - UNSTABLE
+        # --------------------------
+        alias nosu-new='cd ~/.nix-config/nixos-unstable && sudo nixos-rebuild switch --flake .#myhost'
+        alias nosu-update='cd ~/.nix-config/nixos-unstable && nix flake update --flake .'
+        alias nosu-upgrade='cd ~/.nix-config/nixos-unstable && sudo nixos-rebuild switch --upgrade --flake .#myhost'
+        alias nosu-check='cd ~/.nix-config/nixos-unstable && nixos-rebuild build --flake .#myhost'
 
         # --------------------------
         # Git shortcuts

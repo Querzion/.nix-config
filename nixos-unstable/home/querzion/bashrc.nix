@@ -16,14 +16,6 @@
         export NIXOS_HOST="myhost"
 
         # --------------------------
-        # NixOS Flake management
-        # --------------------------
-        alias nos-new='cd ~/.nix-config && sudo nixos-rebuild switch --flake nixos-25.05#myhost'
-        alias nos-update='cd ~/.nix-config && nix flake update --flake nixos-25.05'
-        alias nos-upgrade='cd ~/.nix-config && sudo nixos-rebuild switch --upgrade --flake nixos-25.05#myhost'
-        alias nos-check='cd ~/.nix-config && nixos-rebuild build --flake nixos-25.05#myhost'
-
-        # --------------------------
         # Git shortcuts
         # --------------------------
         alias gs='git status'
