@@ -30,7 +30,13 @@ in
       waveform
       obs-vaapi
       droidcam-obs
-      obsVerticalCanvasPatched
+      #obs-webkitgtk
+      #obs-backgroundremoval
+      #obs-vintage-filter
+      #obs-shaderfilter
+      #looking-glass-obs
+      # obs-vertical-canvas # Compile errors
+      #obsVerticalCanvasPatched
     ];
   };
 }
