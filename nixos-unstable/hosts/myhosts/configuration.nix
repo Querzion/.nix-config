@@ -6,6 +6,7 @@
     ./hardware-configuration.nix
     ./modules/fix-disk-games-permissions.nix
     ./modules/keyboard.nix
+    ./modules/library.nix
     ./graphics.nix
     ./boot.nix
     ./bluetooth.nix
