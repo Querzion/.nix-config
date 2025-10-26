@@ -23,6 +23,8 @@
   # Allow installation of unfree packages globally
   nixpkgs.config.allowUnfree = true;
   
+  services.gnome.gcr-ssh-agent.enable = false;
+  
   ####################
   # System Version   #
   ####################
