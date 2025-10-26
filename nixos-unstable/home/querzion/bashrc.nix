@@ -16,6 +16,12 @@
         export NIXOS_HOST="myhost"
         
         # --------------------------
+        # Bashrc manual sourcing
+        # --------------------------
+        alias source-stable="source ~/.nix-config/nixos-25.05/bashrc.nix"
+        alias source-unstable="source ~/.nix-config/nixos-unstable/bashrc.nix"
+                    
+        # --------------------------
         # NixOS Flake management - STABLE (25.05)
         # --------------------------
         alias noss-new='cd ~/.nix-config/nixos-25.05 && sudo nixos-rebuild switch --flake .#myhost'
