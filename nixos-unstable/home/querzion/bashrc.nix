@@ -12,24 +12,26 @@
         # --------------------------
         # Environment variables
         # --------------------------
-        export NIXOS_DOTFILES="~/.nix-config"
+        export NIXOS_DOTFILES="~/.nix-config/nixos-unstable"
         export NIXOS_HOST="myhost"
         
         # --------------------------
-        # NixOS Flake management - STABLE
+        # NixOS Flake management
         # --------------------------
-        alias noss-new='cd ~/.nix-config/nixos-25.05 && sudo nixos-rebuild switch --flake .#myhost'
-        alias noss-update='cd ~/.nix-config/nixos-25.05 && nix flake update --flake .'
-        alias noss-upgrade='cd ~/.nix-config/nixos-25.05 && sudo nixos-rebuild switch --upgrade --flake .#myhost'
-        alias noss-check='cd ~/.nix-config/nixos-25.05 && nixos-rebuild build --flake .#myhost'
-
+        alias nos-new='cd ~/.nix-config/nixos-unstable && sudo nixos-rebuild switch --flake .#myhost'
+        alias nos-update='cd ~/.nix-config/nixos-unstable && nix flake update --flake .'
+        alias nos-upgrade='cd ~/.nix-config/nixos-unstable && sudo nixos-rebuild switch --upgrade --flake .#myhost'
+        alias nos-check='cd ~/.nix-config/nixos-unstable && nixos-rebuild build --flake .#myhost'
+        
         # --------------------------
-        # NixOS Flake management - UNSTABLE
+        # Nix Channel Switching STABLE/UNSTABLE
         # --------------------------
-        alias nosu-new='cd ~/.nix-config/nixos-unstable && sudo nixos-rebuild switch --flake .#myhost'
-        alias nosu-update='cd ~/.nix-config/nixos-unstable && nix flake update --flake .'
-        alias nosu-upgrade='cd ~/.nix-config/nixos-unstable && sudo nixos-rebuild switch --upgrade --flake .#myhost'
-        alias nosu-check='cd ~/.nix-config/nixos-unstable && nixos-rebuild build --flake .#myhost'
+        # Check the nix channel from the stable channel
+        alias nos-channel-check='cd ~/.nix-config/nixos-25.05/ && sudo nix-channel --list'
+        # Switch to unstable system channel
+        alias nos-unstable-system='cd ~/.nix-config/nixos-unstable/ && sudo nix-channel --add https://channels.nixos.org/nixos-unstable nixos && sudo nix-channel --update && echo "✅ Switched to nixos-unstable"'
+        # Switch to stable 25.05 system channel
+        alias nos-stable-system='cd ~/.nix-config/nixos-25.05/ && sudo nix-channel --add https://channels.nixos.org/nixos-25.05 nixos && sudo nix-channel --update && echo "✅ Switched to nixos-25.05 (stable)"'
 
         # --------------------------
         # Git shortcuts
@@ -99,7 +101,7 @@
         # --------------------------
         # Ownership of the flake.lock file
         # --------------------------
-        alias own-flake='sudo chown querzion:users /home/querzion/.nix-config/flake.lock'
+        alias own-flake='sudo chown querzion:users /home/querzion/.nix-config/nixos-unstable/flake.lock'
 
         # --------------------------
         # WinePrefix 32-bit / 64-bit
