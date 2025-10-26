@@ -10,7 +10,7 @@ let
   # Patched obs-vertical-canvas
   obsVerticalCanvasPatched = pkgs.obs-studio-plugins.obs-vertical-canvas.overrideAttrs (prevAttrs: {
     patches = (prevAttrs.patches or []) ++ [
-      ./patches/obs-vertical-canvas-(25.05).diff
+      ./patches/obs-vertical-canvas.diff
     ];
   });
 in
