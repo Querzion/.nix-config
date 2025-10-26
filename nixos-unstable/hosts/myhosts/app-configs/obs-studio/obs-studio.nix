@@ -20,12 +20,12 @@
         obs-vaapi
         #looking-glass-obs
         droidcam-obs
-        # obs-vertical-canvas # Compile errors
-        (obs-vertical-canvas.overrideAttrs (prevAttrs: {
-            patches = (prevAttrs.patches or []) ++ [
-              ./patches/obs-vertical-canvas.diff
-            ];
-        }))
+        obs-vertical-canvas # Compile errors
+        #(obs-vertical-canvas.overrideAttrs (prevAttrs: {
+        #    patches = (prevAttrs.patches or []) ++ [
+        #      ./patches/obs-vertical-canvas.diff
+        #    ];
+        #}))
         ];
     };
 }
