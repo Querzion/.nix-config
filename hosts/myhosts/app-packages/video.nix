@@ -8,6 +8,7 @@
      mpv                     # lightweight, highly configurable media player
      vlc                     # versatile media player with GUI
      jellyfin-media-player   # client for Jellyfin media server
+     mediainfo
 
      # --------------------------
      # GStreamer framework & plugins
