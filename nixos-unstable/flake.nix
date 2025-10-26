@@ -13,6 +13,7 @@
 
       overlays = [
         (self: super: {
+          # Disable tests for onetbb to avoid build failures
           onetbb = super.onetbb.overrideAttrs (oldAttrs: {
             doCheck = false;
           });
@@ -22,11 +23,18 @@
     {
       nixosConfigurations.myhost = nixpkgs.lib.nixosSystem {
         inherit system;
+
+        # Apply overlays
         nixpkgs.overlays = overlays;
 
         modules = [
+          # Your base system configuration
           ./hosts/myhosts/configuration.nix
+
+          # Home Manager module
           home-manager.nixosModules.home-manager
+
+          # Inline user/home-manager configuration
           ({ config, pkgs, ... }: {
             environment.systemPackages = [
               pkgs.home-manager
@@ -34,6 +42,7 @@
 
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+
             home-manager.users.querzion = import ./home/querzion/home.nix;
           })
         ];
