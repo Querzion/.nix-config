@@ -46,10 +46,5 @@
     AUDIODEV = "hw:3,0";
     ALSA_CARD = "A7P";
   };
-
-  ##############################
-  # User Access to Audio Devices
-  ##############################
-  #users.users.querzion.extraGroups = [ "audio" ];
 }
 
