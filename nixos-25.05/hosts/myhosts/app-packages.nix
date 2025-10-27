@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./app-packages/audio.nix
     ./app-packages/communication.nix
     ./app-packages/development.nix
     ./app-packages/drivers.nix

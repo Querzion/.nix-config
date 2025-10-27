@@ -10,6 +10,7 @@
     ./boot.nix
     ./bluetooth.nix
     ./locale.nix
+    ./audio.nix
     ./desktop.nix
     ./network.nix
     ./services.nix
