@@ -50,6 +50,6 @@
   ##############################
   # User Access to Audio Devices
   ##############################
-  users.users.${config.users.users.root.name or "yourusername"}.extraGroups = [ "audio" ];
+  users.users.querzion.extraGroups = [ "audio" ];
 }
 
