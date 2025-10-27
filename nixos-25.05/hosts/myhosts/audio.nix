@@ -50,6 +50,6 @@
   ##############################
   # User Access to Audio Devices
   ##############################
-  users.users.querzion.extraGroups = [ "audio" ];
+  #users.users.querzion.extraGroups = [ "audio" ];
 }
 
