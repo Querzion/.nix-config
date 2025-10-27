@@ -21,8 +21,5 @@
         kernel.sysctl = {
             "vm.max_map_count" = 2147483642;
         };
-        
-        # Load hid_apple kernel module needed for Apple Magic Trackpad support
-        #kernelModules = [ "hid_apple" ];
     };
 }
