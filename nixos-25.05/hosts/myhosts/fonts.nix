@@ -3,13 +3,13 @@
 {
   fonts.packages = with pkgs; [
     # Nerd Fonts
-    pkgs.nerd-fonts.caskaydia-mono
-    pkgs.nerd-fonts.jetbrains-mono
+    nerd-fonts.caskaydia-mono
+    nerd-fonts.jetbrains-mono
 
     # Microsoft Core Fonts
-    pkgs.corefonts
+    corefonts
 
     # Google Fonts
-    pkgs.google-fonts
+    google-fonts
   ];
 }

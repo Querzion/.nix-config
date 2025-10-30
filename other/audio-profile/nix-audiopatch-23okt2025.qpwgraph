@@ -3,15 +3,11 @@
  <items>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="spotify" port="spotify:output_FL"/>
-   <input node="PCM2902 Audio Codec Analog Stereo" port="USB Audio CODEC:playback_FL"/>
+   <input node="Arctis Nova 7P Analog Stereo" port="Arctis Nova 7P:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="spotify" port="spotify:output_FR"/>
    <input node="Arctis Nova 7P Analog Stereo" port="Arctis Nova 7P:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="spotify" port="spotify:output_FR"/>
-   <input node="PCM2902 Audio Codec Analog Stereo" port="USB Audio CODEC:playback_FR"/>
   </item>
  </items>
 </patchbay>
