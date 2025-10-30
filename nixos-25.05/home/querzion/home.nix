@@ -12,8 +12,8 @@
   programs.fastfetch.enable = true;
 
   home.packages = with pkgs; [
-    pkgs.btop
-    pkgs.eza
+    btop
+    eza
   ];
 
   home.stateVersion = "25.05";
