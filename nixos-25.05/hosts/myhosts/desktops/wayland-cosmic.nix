@@ -25,9 +25,8 @@
     
     # Install keyring libraries and gnome-keyring binary
     environment.systemPackages = with pkgs; [
-        ####################
-        # Security / Key Management
-        ####################
-        libsecret   # password/key storage
+        libsecret   # password/key storage        
+        eog # image viewer (eye of gnome)
+        loupe # image viewer
     ];
 }
