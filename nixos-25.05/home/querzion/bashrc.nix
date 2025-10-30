@@ -14,6 +14,7 @@
         # --------------------------
         export NIXOS_DOTFILES="~/.nix-config/nixos-25.05"
         export NIXOS_HOST="myhost"
+        export PATH="$PATH:$HOME/.dotnet/tools"
         
         # --------------------------
         # Bashrc manual sourcing
