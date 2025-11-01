@@ -20,7 +20,6 @@
     lmstudio     # music / audio production
     localsend    # local file sharing
     appimage-run # run AppImages
-    #flatpak     # optional, Flatpak support
 
     ####################
     # System / Hardware Management
@@ -34,6 +33,7 @@
     # Misc / Utilities
     ####################
     yazi        # notepad/text editor
+    rqbit       # bittorrent client
   ];
 }
 

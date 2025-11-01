@@ -7,6 +7,7 @@
      # --------------------------
      mpv                     # lightweight, highly configurable media player
      vlc                     # versatile media player with GUI
+     vlc-bittorrent
      jellyfin-media-player   # client for Jellyfin media server
      mediainfo
 
