@@ -35,6 +35,7 @@
     yazi        # notepad/text editor
     rqbit       # bittorrent client
     rain-bittorrent
+    transmission_4-qt
   ];
 }
 
