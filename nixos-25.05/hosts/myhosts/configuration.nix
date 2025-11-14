@@ -24,6 +24,12 @@
   # Allow installation of unfree packages globally
   nixpkgs.config.allowUnfree = true;
   
+  # Fix: increase download buffer size
+  #nix.settings.download-buffer-size = 134217728;  # 128 MB 
+  #nix.settings.download-buffer-size = 268435456;  # 256 MB (Recommended)
+  nix.settings.download-buffer-size = 536870912;  # 512 MB (Fast Internet)
+
+  
   ####################
   # System Version   #
   ####################
