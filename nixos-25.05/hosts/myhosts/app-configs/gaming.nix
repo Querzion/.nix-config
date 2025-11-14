@@ -27,9 +27,9 @@
     faudio
 
     # Performance tools
-    gamemode
+    #gamemode
     #mangohud
-    gamescope
+    #gamescope
   ];
 
   ####################
@@ -68,9 +68,8 @@
     package = pkgs.steam.override {
       extraEnv = {
         MANGOHUD = "1";
-        MANGOHUD_PRESET = "full"; # built-in presets: full, minimal & default
-        OBS_VKCAPTURE = "1";
-        RADV_TEX_ANISO = "16";
+        #OBS_VKCAPTURE = "1";
+        #RADV_TEX_ANISO = "16";
       };
     };
 
