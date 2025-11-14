@@ -68,8 +68,6 @@
     package = pkgs.steam.override {
       extraEnv = {
         MANGOHUD = "1";
-        MANGOHUD_CONFIG="fps,frametime,cpu,gpu";
-        MANGOHUD_DLSYM="1";
         OBS_VKCAPTURE = "1";
         RADV_TEX_ANISO = "16";
       };
