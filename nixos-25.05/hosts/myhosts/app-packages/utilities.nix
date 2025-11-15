@@ -37,6 +37,7 @@
     rain-bittorrent
     transmission_4-qt
     filezilla
+    ventoy-full-qt
   ];
 }
 
